@@ -7,6 +7,9 @@ title: Create a Team
   export const prerender = true;
 </script>
 
+> **DEPRECATION NOTICE** —
+> Hey! We're introducing <strong>Teams & Projects</strong> to surface <strong>Prebuilds</strong> in the dashboard. All existing teams will be migrated over the upcoming weeks. There's no action required on your side. <a href="/docs/teams-and-projects" className="learn-more">Learn more about Teams & Projects</a>.
+
 # Create a Team
 
 From [gitpod.io/teams/](https://gitpod.io/teams/), you can create a team and manage subscriptions for your team members with centralized billing.
