@@ -15,5 +15,5 @@ The following links describe how to develop on Gitpod and elaborate on topics br
 - [Life of a workspace](/docs/life-of-workspace)
 - [Contexts](/docs/context-urls)
 - [Collaboration & Sharing](/docs/sharing-and-collaboration)
-- [Create a team](/docs/teams)
+- [Teams & Projects](/docs/teams-and-projects)
 - [Local Companion](/docs/develop/local-companion)
