@@ -9,11 +9,15 @@ title: Create a Team
 
 # Teams & Projects
 
-In Gitpod, you can use teams to manage multiple projects but also collaborate with your team using more efficient workflows.
+In Gitpod, you can use teams to manage multiple projects and also collaborate with your team using more efficient workflows.
+
+When you sign up for Gitpod the first time, you automatically gain access to a **Personal Account** where you can also add projects below.
+To collaborate with others on projects you can to create a **Team** and invite others as team members.
 
 ## Teams
 
 You can use teams to group and manage one or more projects and invite team members.
+Users with access to a team can view branches, prebuilds, and configuration for all projects within a team as well as open new workspaces directly from a branch or a prebuild from the dashboard.
 
 ### View teams
 
@@ -26,22 +30,75 @@ To create a new team:
 1. On the top bar, click on the scope selector and select _New Team_.
 2. Next, you will be asked for a team name that will serve also as the team slug.
 
-### Add users to a team
+### Add members to a team
+
+Once you create a team you can invite team members by using the unique invite URL from the Members page within a team.
 
 ### Change member permissions
 
+New members will join with a Member role which you can later change if needed from the Members list using the more actions button. See [Roles](#roles) below.
+
 ### Remove a member from a team
+
+You can remove a team member form the Members list using the more actions button while hovering over the user entry.
 
 ### Filter members in a team
 
-### Remove a team
+On the Members page you can filter users by membership role using the filters above the Members list.
+
+### Leaving a team
+
+You can leave a team using the more actions button in the Members list while hovering over your user entry.
 
 ## Projects
 
+Projects represent the connection of Gitpod with a remote git repository.
+On GitHub such a connection is done through the [GitHub App](https://github.com/marketplace/gitpod-io) while on GitLab and Bitbucket the connection exists through an active webhook.
+
+Projects have a stable URL in the dashboard based on the team's slug and the project's name like the following:
+
+> `https://gitpod.io/<team>/<project>/`
+
 ### View projects
+
+All projects are listed as cards on your personal account and all the teams you are a member of.
+Project cards include information like repository name, repository URL, quick links to project branches and prebuilds as well as branch and timestamp information for the latest prebuild.
 
 ### Add a new project
 
+You can search or a new projects on the Projects page on teams or personal account.
+
+1. First, click on the New Project button on the Projects page.
+2. You can select a provider where the repository exists. By default, the wizard will default to the first provider you've authorized with when you signed up for Gitpod the first time.
+3. You will need to install the GitHub app or have proper permissions to install a webhook for GitLab and Bitbucket before selecting a repository.
+4. If you are trying to add a project from your personal account, you'll be prompted to optionally create a team for the new project. By default, the wizard will automatically associate a project to a team if you initiated the process from the team page.
+5. Last but not least, you'll be redirected to the configuration page of the new project.
+
 ### Configure a project
 
+Once you add a project, Gitpod will try to automatically detect any project configuration by looking up for `.gitpod.yml` file inside the repository or try to guess project type and build configuration to suggest a boilerplate of a `.gitpod.yml`.
+
+If Gitpod can't detect the project type based on the source code of the project you'll get a commented `.gitpod.yml` that you need to adjust before running a successful prebuild.
+
+Once you are happy with the configuration you can try running a prebuild and then opening a new workspace.
+
+The configuration will be stored with the project until you decide to persist the changes in the repository.
+
 ### Remove a project
+
+You can remove any project using the more actions button while hovering over a project card.
+
+## Roles
+
+**Note:** Currently, team Members have the very similar permissions with team Owners as the only difference includes managing other team members.
+
+| Permission          | Owner | Member |
+| ------------------- | ----- | ------ |
+| Manage Team Members | Yes   | No     |
+| Invite Team Members | Yes   | Yes    |
+| Add Projects        | Yes   | Yes    |
+| Remove Projects     | Yes   | Yes    |
+| Add Projects        | Yes   | Yes    |
+| View Branches       | Yes   | Yes    |
+| View Prebuilds      | Yes   | Yes    |
+| Trigger Prebuilds   | Yes   | Yes    |
