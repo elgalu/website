@@ -7,6 +7,9 @@ title: Create a Team
   export const prerender = true;
 </script>
 
+> **NEW FEATURE** —
+> Teams & Projects is still in BETA. You can activate thjis feature by joining a team or directly visiting [`gitpod.io/new`](https://gitpod.io/new).
+
 # Teams & Projects
 
 In Gitpod, you can use teams to manage multiple projects and also collaborate with your team using more efficient workflows.
