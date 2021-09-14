@@ -4,12 +4,12 @@
 </script>
 
 <a
-  href="/#get-started"
+  href="https://gitpod.io/"
   on:click={() =>
-    window.analytics.track("signup_clicked", {
+    window.analytics.track("dashboard_clicked", {
       context: "header_button",
     })}
   class="{clazz} flex items-center justify-center rounded-xl bg-black font-bold text-off-white text-sm focus:text-off-white focus:bg-black-hover hover:text-off-white hover:bg-black-hover"
 >
-  Sign Up
+  Dashboard
 </a>

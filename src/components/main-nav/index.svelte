@@ -6,6 +6,7 @@
   import menuState from "./mobile-menu/state";
   import LoginButton from "./login-button.svelte";
   import SignUpButton from "./sign-up-button.svelte";
+  import DashboardButton from "./dashboard-button.svelte";
   import Logo from "../svgs/logo.svelte";
   import { showHideOverflowY } from "../../utils/helpers";
 
@@ -42,6 +43,11 @@
       label: "Pricing",
     },
   ];
+
+  const isLoggedIn =
+    typeof document === "undefined"
+      ? false
+      : !!document.cookie.match("gitpod-user=loggedIn");
 </script>
 
 <style type="text/postcss">
@@ -123,10 +129,14 @@
       {/each}
     </div>
     <div class="login-wrapper items-center hidden">
-      <LoginButton />
-      <SignUpButton class="ml-x-small h-8 w-20" />
+      {#if isLoggedIn}
+        <DashboardButton class="ml-x-small h-8 w-24" />
+      {:else}
+        <LoginButton />
+        <SignUpButton class="ml-x-small h-8 w-20" />
+      {/if}
     </div>
     <MobileMenuToggle />
   </div>
-  <MobileMenu {navItems} />
+  <MobileMenu {navItems} {isLoggedIn} />
 </nav>
