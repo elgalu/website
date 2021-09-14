@@ -7,7 +7,7 @@
       description:
         "We welcome feedback from security researchers and the general public to help improve our security.",
       link: {
-        href: "/",
+        href: "/security/report",
         text: "View report process",
       },
     },
@@ -16,7 +16,7 @@
       description:
         "Big thanks the following people who responsibly disclosed their security findings.",
       link: {
-        href: "/",
+        href: "/security/thanks",
         text: "View contributors",
       },
     },

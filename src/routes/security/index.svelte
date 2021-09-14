@@ -1,10 +1,10 @@
 <script>
-  import { brands } from "../contents/home";
-  import Brands from "../components/index/brands.svelte";
-  import Secure from "../components/security/secure.svelte";
-  import Program from "../components/security/program.svelte";
-  import CallToAction from "../components/security/call-to-action.svelte";
-  import Report from "../components/security/report.svelte";
+  import { brands } from "../../contents/home";
+  import Brands from "../../components/index/brands.svelte";
+  import Secure from "../../components/security/secure.svelte";
+  import Program from "../../components/security/program.svelte";
+  import CallToAction from "../../components/security/call-to-action.svelte";
+  import Report from "../../components/security/report.svelte";
 </script>
 
 <header>
