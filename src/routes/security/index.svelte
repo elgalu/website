@@ -5,7 +5,18 @@
   import Program from "../../components/security/program.svelte";
   import CallToAction from "../../components/security/call-to-action.svelte";
   import Report from "../../components/security/report.svelte";
+  import OpenGraph from "../../components/open-graph.svelte";
+
 </script>
+
+<OpenGraph
+  data={{
+    description:
+      "Does Gitpod encrypt data?",
+    title: "Security",
+  }}
+/>
+
 
 <header>
   <h1>Security at Gitpod</h1>
