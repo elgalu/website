@@ -7,12 +7,6 @@
   ol {
     max-width: 285px;
   }
-
-  .header {
-    @media (max-width: 972px) {
-      @apply pt-large;
-    }
-  }
 </style>
 
   <div class="max-w-lg mx-auto relative">
