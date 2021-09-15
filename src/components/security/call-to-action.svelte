@@ -24,7 +24,7 @@
 </script>
 
 <Section>
-  <div class="flex justify-between max-w-3xl mx-auto">
+  <div class="flex flex-col md:flex-row items-center md:items-start justify-between max-w-3xl mx-auto space-y-medium md:space-y-0">
     {#each actions as a}
       <div class="max-w-xs">
         <h2 class="h3">{a.title}</h2>
