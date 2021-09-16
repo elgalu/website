@@ -1,22 +1,16 @@
 <script>
+  import Action from "../../components/security/action.svelte";
   import OpenGraph from "../../components/open-graph.svelte";
-  import Thanks from "../../components/security/thanks.svelte";
+  import { thanksAction } from "../../contents/security";
+  import Section from "../../components/section.svelte";
 </script>
 
 <OpenGraph
   data={{
     description: "Gitpod GmbH Security Vulnerability Disclosure Policy",
-    title: "Gitpod GmbH Security Vulnerability Disclosure Policy",
+    title: "Security Disclosure Policy",
   }}
 />
-
-<style type="text/postcss">
-	.header {
-		@media(max-width: 973px) {
-			@apply pt-large;
-		}
-	}
-</style>
 
 <article class="text-blob">
   <h1 class="h2 text-center">Security Vulnerability Disclosure Policy</h1>
@@ -177,7 +171,6 @@
   </blockquote>
 </article>
 
-<div class="header">
-	<Thanks />
-</div>
-
+<Section>
+  <Action action={thanksAction} class="mx-auto text-center bg-white max-w-md p-small shadow-normal rounded-2xl" />
+</Section>

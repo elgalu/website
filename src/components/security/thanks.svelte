@@ -9,6 +9,7 @@
   }
 </style>
 
+<header>
   <div class="max-w-lg mx-auto relative">
     <img
       src="/svg/security/heart.svg"
@@ -39,3 +40,4 @@
       </li>
     </ol>
   </div>
+</header>

@@ -1,38 +1,15 @@
 <script>
+  import { reportAction, thanksAction } from "../../contents/security";
   import Section from "../section.svelte";
-
-  const actions = [
-    {
-      title: "Security Vulnerability Disclosure Policy",
-      description:
-        "We welcome feedback from security researchers and the general public to help improve our security.",
-      link: {
-        href: "/security/report",
-        text: "View report process",
-      },
-    },
-    {
-      title: "Thanks",
-      description:
-        "Big thanks the following people who responsibly disclosed their security findings.",
-      link: {
-        href: "/security/thanks",
-        text: "View contributors",
-      },
-    },
-  ];
+  import Action from "./action.svelte";
 </script>
 
 <Section>
-  <div class="flex flex-col md:flex-row items-center md:items-start justify-between max-w-3xl mx-auto space-y-medium md:space-y-0">
-    {#each actions as a}
-      <div class="max-w-xs">
-        <h2 class="h3">{a.title}</h2>
-        <p class="my-x-small">
-          {a.description}
-        </p>
-        <a href={a.link.href} class="btn-primary">{a.link.text}</a>
-      </div>
+  <div
+    class="flex flex-col md:flex-row items-center md:items-start justify-between max-w-3xl mx-auto space-y-medium md:space-y-0"
+  >
+    {#each [thanksAction, reportAction] as action}
+      <Action {action} />
     {/each}
   </div>
 </Section>

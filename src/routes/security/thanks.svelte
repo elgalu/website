@@ -1,7 +1,7 @@
 <script>
- import Report from "../../components/security/report.svelte";
- import Thanks from "../../components/security/thanks.svelte";
- import OpenGraph from "../../components/open-graph.svelte";
+  import Report from "../../components/security/report.svelte";
+  import Thanks from "../../components/security/thanks.svelte";
+  import OpenGraph from "../../components/open-graph.svelte";
 </script>
 
 <OpenGraph
@@ -12,7 +12,5 @@
   }}
 />
 
-<header>
-  <Thanks />
-</header>
+<Thanks />
 <Report />

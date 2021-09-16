@@ -1,3 +1,4 @@
+import type { Action } from '../types/action.type';
 import type { ProgramFeature } from '../types/program-feature.type';
 
 export const secureParagraphs = [
@@ -34,3 +35,23 @@ export const programFeatures: ProgramFeature[] = [
 		image: 'encryption.svg',
 	},
 ]
+
+export const thanksAction: Action = {
+	title: "Thanks",
+	description:
+		"Big thanks the following people who responsibly disclosed their security findings.",
+	link: {
+		href: "/security/thanks",
+		text: "View contributors",
+	},
+}
+
+export const reportAction: Action = {
+	title: "Security Vulnerability Disclosure Policy",
+	description:
+		"We welcome feedback from security researchers and the general public to help improve our security.",
+	link: {
+		href: "/security/report",
+		text: "View report process",
+	},
+}
