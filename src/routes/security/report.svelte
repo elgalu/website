@@ -96,8 +96,8 @@
       us;
     </li>
     <li>
-      Provide us a reasonable amount of time (at least 90 days from the initial
-      report) to resolve the issue before you disclose it publicly;
+      Provide us with a reasonable amount of time (at least 90 days from the
+      initial report) to resolve the issue before you disclose it publicly;
     </li>
     <li>
       Perform testing only on in-scope systems, and respect systems and
@@ -172,5 +172,8 @@
 </article>
 
 <Section>
-  <Action action={thanksAction} class="mx-auto text-center bg-white max-w-md p-small shadow-normal rounded-2xl" />
+  <Action
+    action={thanksAction}
+    class="mx-auto text-center bg-white max-w-md p-small shadow-normal rounded-2xl"
+  />
 </Section>

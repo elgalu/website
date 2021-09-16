@@ -6,15 +6,15 @@
 </script>
 
 <style>
-	div {
-		max-width: 400px;
-	}
+  div {
+    max-width: 400px;
+  }
 </style>
 
 <div class="bg-white shadow-normal px-9 py-medium rounded-4xl mb-12">
-  <img src="/svg/security/{image}" alt={title} class="mx-auto"/>
+  <img src="/svg/security/{image}" alt={title} class="mx-auto" />
   <h3 class="text-center mt-xx-small mb-small">{title}</h3>
   {#each paragraphs as p}
-    <p>{p}</p>
+    <p>{@html p}</p>
   {/each}
 </div>
