@@ -27,9 +27,8 @@
     <h2 class="h4 year">2021</h2>
     <ol class="text-left mx-auto my-x-small">
       <li>
-        <a rel="nofollow" href="https://twitter.com/snoopysecurity"
-          >Sam Sanoop</a
-        > from Snyk.
+        <a rel="nofollow" href="https://twitter.com/byte89">Kirill Efimov</a> from
+        Snyk.
       </li>
       <li>
         <a
