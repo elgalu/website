@@ -1,19 +1,13 @@
 <script lang="ts">
   import Carousel from "../carousel.svelte";
   import Section from "../section.svelte";
-  import Brands from "./brands.svelte";
   import Testimonial from "./testimonial.svelte";
   import type { Testimonial as TestimonialType } from "../../types/testimonial.type";
-  import { brands } from "../../contents/home";
 
   export let testimonials: TestimonialType[];
 </script>
 
 <style lang="scss">
-  h2 {
-    text-align: center;
-  }
-
   :global(.slides) {
     margin-bottom: var(--small);
   }
@@ -39,12 +33,14 @@
 
 <Section class="-mb-20">
   <div class="row">
-    <h2 class="h1">Used by 400,000+ developers.</h2>
+    <div class="text-center">
+      <h2>Putting developer experience first</h2>
+      <p class="text-large mt-xx-small mb-medium">Bring back joy and speed to your workflows.</p>
+    </div>
     <Carousel>
       {#each testimonials as testimonial, position}
         <Testimonial {testimonial} {position} />
       {/each}
     </Carousel>
-    <Brands brands={brands} />
   </div>
 </Section>
