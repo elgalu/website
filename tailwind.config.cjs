@@ -29,6 +29,7 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "2rem",
+        "5xl": "2.5rem"
       },
       colors: {
         black: "var(--black)",
@@ -95,6 +96,7 @@ module.exports = {
       },
       boxShadow: {
         normal: "var(--shadow)",
+        light: "var(--shadow-light)",
         medium: "var(--shadow-medium)",
         brand: "var(--shadow-brand)",
       },
