@@ -7,16 +7,13 @@
   import type { Email } from "../../functions/submit-form";
   import OpenGraph from "../../components/open-graph.svelte";
   import SubmissionSuccess from "../../components/submission-success.svelte";
-  import { onMount } from "svelte";
 
   const studentUnlimitedSubject = "Educational Discount Verification";
 
   const subjects = [
     "Abuse Report",
     "Billing",
-    "Customer Support",
     studentUnlimitedSubject,
-    "Sales Enquiry",
     "Self-hosting Gitpod",
     "Open Source Sponsorship",
     "Other",
@@ -63,17 +60,17 @@
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
 
-  onMount(() => {
-    if (location.search === "?support") {
-      const inputs = [...document.querySelectorAll('input[type="radio"]')];
-      inputs.forEach((input: HTMLInputElement) => {
-        if (input.value === "Customer Support") {
-          formData.selectedSubject.value = "Customer Support";
-          input.checked = true;
-        }
-      });
-    }
-  });
+  // onMount(() => {
+  //   if (location.search === "?support") {
+  //     const inputs = [...document.querySelectorAll('input[type="radio"]')];
+  //     inputs.forEach((input: HTMLInputElement) => {
+  //       if (input.value === "Customer Support") {
+  //         formData.selectedSubject.value = "Customer Support";
+  //         input.checked = true;
+  //       }
+  //     });
+  //   }
+  // });
 
   const handleSubmit = async () => {
     isFormDirty = true;
@@ -140,10 +137,6 @@
   }
   fieldset li {
     margin: 0 1rem 0 0;
-  }
-
-  .cards.double {
-    @apply justify-between;
   }
 </style>
 
@@ -221,7 +214,7 @@
         </li>
         <li class:error={isFormDirty && !formData.email.valid}>
           <label for="email"
-            >E-Mail*
+            >E-mail*
             {#if isStudentEmailNoteShown}
               (Please use your student or faculty email)
             {/if}

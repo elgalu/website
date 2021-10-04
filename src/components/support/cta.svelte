@@ -14,7 +14,7 @@
       target="_blank"
       class="btn-primary mt-xx-small">View status page</a
     >
-    <a href="/contact?support#form" class="btn-secondary mt-xx-small"
+    <a href="/contact/support" class="btn-secondary mt-xx-small"
       >Contact support</a
     >
   </div>
