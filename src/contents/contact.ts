@@ -7,7 +7,7 @@ export const contactActions: ContactAction[] = [
     text: "Get help with any question or  issue.",
     link: {
       text: "Get Support",
-      href: "/contact/support",
+      href: "/support",
     },
   },
   {
